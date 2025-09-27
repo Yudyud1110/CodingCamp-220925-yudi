@@ -9,36 +9,93 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-   <script src="js/script.js"></script>
+
+    <script src="js/script.js"></script>
 
     <!-- header content -->
+
     <header>
         <!-- logo website -->
-        <div>
-            
+        <div class="logo">
+            <img src="https://placehold.co/60x60" alt="Company Logo" />
         </div>
-
         <!-- navigation menu -->
         <nav>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Our Profile</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Message Us</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#profile">Our Profile</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Message Us</a></li>
             </ul>
         </nav>
     </header>
 
+
     <!-- isi utama -->
     <main>
-        <h1>Hello, World!</h1>
-        <p>Welcome to my portfolio website.</p>
-        
+        <!-- Home Section -->
+        <section id="home" class="section home-section">
+            <div class="banner">
+                <img src="https://placehold.co/1200x300" alt="Company Banner" class="banner-img" />
+            </div>
+            <div class="greeting" id="greeting"></div>
+        </section>
+
+        <!-- Profile Section -->
+        <section id="profile" class="section profile-section">
+            <h2>About Our Company</h2>
+            <p>We are a creative tech company dedicated to delivering innovative solutions for our clients. Our team is passionate about technology, design, and customer satisfaction.</p>
+            <div class="vision-mission">
+                <div class="vision">
+                    <h3>Vision</h3>
+                    <p>To be a leading provider of creative and reliable technology solutions worldwide.</p>
+                </div>
+                <div class="mission">
+                    <h3>Mission</h3>
+                    <ul>
+                        <li>Deliver high-quality products and services.</li>
+                        <li>Empower clients through technology.</li>
+                        <li>Foster a culture of innovation and teamwork.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section (placeholder) -->
+        <section id="portfolio" class="section portfolio-section">
+            <h2>Portfolio</h2>
+            <p>Our recent projects will be displayed here.</p>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section contact-section">
+            <h2>Message Us</h2>
+            <form id="contactForm" novalidate>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required />
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required />
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" required pattern="[0-9]{10,15}" />
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit">Submit</button>
+                <div id="formMessage" class="form-message"></div>
+            </form>
+        </section>
     </main>
 
     <!-- footer content -->
-    <footer></footer>
-
-    <p>This is a sample HTML document.</p>  
+    <footer>
+        <p>Created by Yudi &copy; 2025</p>
+    </footer>
 </body>
 </html>
